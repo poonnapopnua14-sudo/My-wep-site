@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Orange Digital</title>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        font-family: "Prompt", sans-serif;
+        background-color: #fff;
+        color: #333;
+    }
+
+    /* ---------- Header ---------- */
+    header {
+        background: #fff;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 60px;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    .logo {
+        font-size: 26px;
+        font-weight: 600;
+        color: orange;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #444;
+        margin: 0 15px;
+        font-weight: 500;
+    }
+
+    nav a:hover {
+        color: orange;
+    }
+
+    .contact-bar {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .contact-bar a {
+        background: orange;
+        color: #fff;
+        padding: 8px 18px;
+        border-radius: 20px;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    /* ---------- Section Services ---------- */
+    section {
+        padding: 80px 100px;
+    }
+
+    h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+    h2::after {
+        content: '•';
+        color: orange;
+        margin-left: 5px;
+    }
+
+    .services {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 40px;
+    }
+
+    .service {
+        display: flex;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .service-icon {
+        font-size: 30px;
+        color: orange;
+    }
+
+    .service h3 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .service p {
+        color: #666;
+        font-size: 14px;
+    }
+
+    /* ---------- Floating Buttons ---------- */
+    .floating-buttons {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        z-index: 99;
+    }
+
+    .floating-buttons a {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-decoration: none;
+        font-size: 22px;
+    }
+
+    .line { background-color: #00C300; }
+    .mail { background-color: #FFA500; }
+    .phone { background-color: #0066FF; }
+
+    /* ---------- Footer ---------- */
+    footer {
+        text-align: center;
+        background: #f9f9f9;
+        padding: 30px;
+        margin-top: 60px;
+        color: #555;
+        font-size: 14px;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Punnapop FastWork</div>
+    <nav>
+        <a href="#services">บริการของเรา</a>
+        <a href="#projects">โปรเจ็ค</a>
+        <a href="#news">ข่าวสาร</a>
+        <a href="#about">เกี่ยวกับเรา</a>
+        <a href="#contact">ติดต่อเรา</a>
+    </nav>
+    <div class="contact-bar">
+        <a href="#contact">สอบถามราคา</a>
+    </div>
+</header>
+
+<section id="services">
+    <h2>บริการของเรา</h2>
+    <div class="services">
+        <div class="service">
+            <div class="service-icon">💻</div>
+            <div>
+                <a href="TEST">รับทำเว็บบไซต์</a>
+                <p>เว็บไซต์องค์กร เว็บไซต์ขายสินค้าออนไลน์</p>
+            </div>
+        </div>
+
+        <div class="service">
+            <div class="service-icon">🧑‍💻</div>
+            <div>
+                <h3>รับเขียนโปรแกรม</h3>
+                <p>พัฒนาโปรแกรมซอฟต์แวร์ตามความต้องการ</p>
+            </div>
+        </div>
+
+        <div class="service">
+            <div class="service-icon">📱</div>
+            <div>
+                <h3>รับทำแอพพลิเคชัน</h3>
+                <p>Mobile App (iOS, Android), Line Application</p>
+            </div>
+        </div>
+
+        <div class="service">
+            <div class="service-icon">🌐</div>
+            <div>
+                <h3>รับติดตั้งระบบ Network, IT</h3>
+                <p>ติดตั้งระบบ Network แก้ไข และดูแล IT Solution</p>
+            </div>
+        </div>
+
+        <div class="service">
+            <div class="service-icon">📈</div>
+            <div>
+                <h3>การตลาดออนไลน์</h3>
+                <p>Google SEO / Google Ads</p>
+            </div>
+        </div>
+
+        <div class="service">
+            <div class="service-icon">🎥</div>
+            <div>
+                <h3>ถ่ายภาพและวิดีโอ</h3>
+                <p>ถ่ายภาพนิ่งและวิดีโอองค์กรเพื่อโปรโมท</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2026 By Punnapop Teja
+</footer>
+
+<!-- Floating buttons -->
+<div class="floating-buttons">
+    <a href="https://line.me" target="_blank" class="line">💬</a>
+    <a href="mailto:info@example.com" class="mail">✉️</a>
+    <a href="tel:0815910000" class="phone">📞</a>
+</div>
+
+</body>
+</html>
